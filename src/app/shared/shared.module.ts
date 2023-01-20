@@ -12,6 +12,10 @@ import { TopbarComponent } from './components/topbar/topbar.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SidebarComponent,
+    TopbarComponent
   ]
 })
 export class SharedModule { }
