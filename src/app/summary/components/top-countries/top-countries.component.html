@@ -4,47 +4,14 @@
     <ul class="list-group">
       <li
         class="list-group-item d-flex justify-content-between align-content-center"
+        *ngFor="let country of topConfirmedCases"
       >
         <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
+          <div class="fw-bold">{{ country?.Country }}</div>
         </div>
-        <span class="badge bg-warning rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-warning rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-warning rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-warning rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-warning rounded-pill">300,000</span>
+        <span class="badge bg-warning rounded-pill">{{
+          country?.TotalConfirmed | number
+        }}</span>
       </li>
     </ul>
   </div>
@@ -54,47 +21,14 @@
     <ul class="list-group">
       <li
         class="list-group-item d-flex justify-content-between align-content-center"
+        *ngFor="let country of topConfirmedDeaths"
       >
         <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
+          <div class="fw-bold">{{ country?.Country }}</div>
         </div>
-        <span class="badge bg-danger rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-danger rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-danger rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-danger rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-danger rounded-pill">300,000</span>
+        <span class="badge bg-danger rounded-pill">{{
+          country?.TotalDeaths | number
+        }}</span>
       </li>
     </ul>
   </div>
@@ -104,47 +38,14 @@
     <ul class="list-group">
       <li
         class="list-group-item d-flex justify-content-between align-content-center"
+        *ngFor="let country of topConfirmedRecovered"
       >
         <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
+          <div class="fw-bold">{{ country?.Country }}</div>
         </div>
-        <span class="badge bg-success rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-success rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-success rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-success rounded-pill">300,000</span>
-      </li>
-
-      <li
-        class="list-group-item d-flex justify-content-between align-content-center"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Australia</div>
-        </div>
-        <span class="badge bg-success rounded-pill">300,000</span>
+        <span class="badge bg-success rounded-pill"
+          >{{country?.TotalRecovered | number}}</span
+        >
       </li>
     </ul>
   </div>
