@@ -16,4 +16,11 @@ export class CountryPageComponent implements OnInit {
       this.covidData = data;
     });
   }
+
+  searchCountry(country: string) {
+    const countries = this.covidData.Countries.filter((c: any) =>
+      c.Country.toLowerCase().includes(country.toLowerCase())
+    );
+    console.log(countries)
+  }
 }
